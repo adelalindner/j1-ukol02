@@ -80,7 +80,7 @@ public class HlavniProgram {
 
     public void nakresliObdelnik(double delkaStranaA, double delkaStranaB, Color barvaCary) {
 
-        turtle.setPenColor(barvaCary);
+        zofka.setPenColor(barvaCary);
         for (int i = 0; i < 2; i++) {
             zofka.move(delkaStranaA);
             zofka.turnLeft(90);
