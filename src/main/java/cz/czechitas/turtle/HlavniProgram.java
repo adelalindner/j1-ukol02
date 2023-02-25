@@ -18,11 +18,11 @@ public class HlavniProgram {
         Color modraBarva;
         modraBarva = new Color(0, 55, 255);
 
-        Color zelenaBarva;
-        zelenaBarva = new Color(133, 231, 70);
-
         Color zlutaBarva;
         zlutaBarva = new Color(252, 222, 69);
+
+        Color zelenaBarva;
+        zelenaBarva = new Color(133, 231, 70);
 
         //Zmrzlina:
         zofka.setLocation(250.0, 150);
