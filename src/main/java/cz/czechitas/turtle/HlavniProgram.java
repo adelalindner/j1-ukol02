@@ -13,22 +13,34 @@ public class HlavniProgram {
         cervenaBarva=new Color(255,0,0);
 
         Color modraBarva;
-        cervenaBarva=new Color(0, 55, 255);
+        modraBarva=new Color(0, 55, 255);
 
         Color zelenaBarva;
-        cervenaBarva=new Color(133, 231, 70);
+        zelenaBarva=new Color(133, 231, 70);
 
         Color zlutaBarva;
+        zlutaBarva=new Color(252, 222, 69);
 
         //Zmrzlina:
-        zofka.setLocation(100.0,100.0);
-
+        zofka.setLocation(250.0,150);
+        nakresliKruh(1.2, zlutaBarva);
+        zofka.turnLeft(90);
+        nakresliRovnostrannyTrojuhehlnik(140, cervenaBarva);
 
         //Sněhulák:
-        zofka.setLocation(100.0,100.0);
+        zofka.setLocation(500.0,150.0);
+        nakresliKruh(0.8, modraBarva);
+        zofka.setLocation(520.0,280.0);
+        nakresliKruh(1.2, modraBarva);
+        zofka.setLocation(540.0,450.0);
+       nakresliKruh(1.6, modraBarva);
+        zofka.setLocation(580.0,280.0);
+        nakresliKruh(0.5, modraBarva);
+        zofka.setLocation(380.0,280.0);
+        nakresliKruh(0.5, modraBarva);
 
         //Mašinka:
-        zofka.setLocation(100.0,100.0);
+        zofka.setLocation(750.0,150.0);
 
 
 
@@ -37,11 +49,12 @@ public class HlavniProgram {
 
     public void nakresliRovnostrannyTrojuhehlnik(double delkaStrany, Color barvaCary) {
 
-        for (int i = 0; i < 3; i++) {
             zofka.setPenColor(barvaCary);
             zofka.move(delkaStrany);
             zofka.turnLeft(120);
-        }
+            zofka.move(delkaStrany);
+            zofka.turnLeft(120);
+        zofka.move(delkaStrany);
     }
 
     public void nakresliCtverec(double delkaStrany, Color barvaCary) {
